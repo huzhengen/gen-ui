@@ -2,12 +2,8 @@
   <div class="doc">
     <Nav />
     <div class="content">
-      <aside>
-        <Aside />
-      </aside>
-      <main>
-        <Main />
-      </main>
+      <Aside />
+      <Main />
     </div>
   </div>
 </template>
@@ -33,14 +29,11 @@ export default {
   height: 100vh;
   .content {
     display: flex;
+    justify-content: center;
     flex-grow: 1;
-    aside {
-      width: 200px;
-    }
-    main {
-      width: 100%;
-      max-width: 1000px;
-    }
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 </style>

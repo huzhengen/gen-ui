@@ -38,6 +38,9 @@ export default {
       display: flex;
       align-items: center;
       flex-direction: column;
+      h1,h2{
+        text-align: center;
+      }
       > .links {
         > a {
           margin: 0 1em;

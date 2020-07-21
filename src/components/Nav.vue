@@ -32,10 +32,13 @@ header {
     > .logo {
       max-width: 6em;
       margin-right: auto;
+      white-space: nowrap;
+      padding-left: 1em;
     }
     > .menu {
       display: flex;
       flex-wrap: nowrap;
+      white-space: nowrap;
       > li {
         margin: 0 1em;
       }

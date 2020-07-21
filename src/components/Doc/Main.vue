@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <main>main</main>
-  </div>
+  <main>
+    <router-view />
+  </main>
 </template>
 
 <script>
@@ -12,5 +12,8 @@ export default {
 
 
 <style lang="scss" scoped>
-
+main {
+  
+  flex-grow: 1;
+}
 </style>
