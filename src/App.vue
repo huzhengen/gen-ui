@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "App"
+  name: "App",
 };
 </script>
 
@@ -16,6 +16,7 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
+
 ul,
 ol {
   list-style: none;

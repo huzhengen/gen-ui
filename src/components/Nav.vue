@@ -9,7 +9,7 @@
           <router-link to="/doc">文档</router-link>
         </li>
         <li>
-          <a href="//github.com/" target="_blank">GitHub</a>
+          <a href="//github.com/huzhengen/gen-ui" target="_blank">GitHub</a>
         </li>
       </ul>
     </nav>
@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: "Nav"
+  name: "Nav",
 };
 </script>
 
@@ -29,16 +29,19 @@ header {
     margin: 0 auto;
     display: flex;
     padding: 16px 0;
+
     > .logo {
       max-width: 6em;
       margin-right: auto;
       white-space: nowrap;
       padding-left: 1em;
     }
+
     > .menu {
       display: flex;
       flex-wrap: nowrap;
       white-space: nowrap;
+
       > li {
         margin: 0 1em;
       }
