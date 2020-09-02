@@ -8,6 +8,7 @@
     <span class="toggleAside" @click="toggleMenu"></span>
   </div>
 </template>
+
 <script lang="ts">
 import { inject, Ref } from "vue";
 export default {
@@ -20,6 +21,7 @@ export default {
   },
 };
 </script>
+
 <style lang="scss" scoped>
 .topnav {
   background: pink;

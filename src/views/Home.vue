@@ -6,21 +6,17 @@
       <h2>基于 Vue3 的 UI 框架。</h2>
       <p class="actions">
         <a href="https://github.com/huzhengen/gen-ui">GitHub</a>
-        <router-link to="/doc">Getting Started</router-link>
+        <router-link to="/doc">GET STARTED</router-link>
       </p>
     </div>
   </div>
 </template>
-
 <script lang="ts">
 import Topnav from "../components/Topnav.vue";
 export default {
-  components: {
-    Topnav,
-  },
+  components: { Topnav },
 };
 </script>
-
 <style lang="scss" scoped>
 .banner {
   padding: 100px 0;
@@ -29,10 +25,8 @@ export default {
   align-items: center;
   flex-direction: column;
   background: lightgreen;
-
   > .actions {
     padding: 8px 0;
-
     a {
       margin: 0 8px;
       background: #fff;
