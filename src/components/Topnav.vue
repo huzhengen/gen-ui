@@ -42,6 +42,7 @@ export default {
     display: flex;
     white-space: nowrap;
     flex-wrap: nowrap;
+    align-items: center;
     > li {
       margin: 0 1em;
     }
