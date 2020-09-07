@@ -2,7 +2,7 @@
   <div class="topnav">
     <div class="logo">GEN-UI</div>
     <ul class="menu">
-      <li>文档</li>
+      <li>Doc</li>
       <li>GitHub</li>
     </ul>
     <span class="toggleAside" @click="toggleMenu"></span>

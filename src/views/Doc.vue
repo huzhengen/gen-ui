@@ -3,19 +3,19 @@
     <Topnav class="nav" />
     <div class="content">
       <aside v-if="menuVisible">
-        <h2>组件列表</h2>
+        <h2>Components</h2>
         <ol>
           <li>
-            <router-link to="/doc/switch">Switch 组件</router-link>
+            <router-link to="/doc/switch">Switch</router-link>
           </li>
           <li>
-            <router-link to="/doc/button">Button 组件</router-link>
+            <router-link to="/doc/button">Button</router-link>
           </li>
           <li>
-            <router-link to="/doc/dialog">Dialog 组件</router-link>
+            <router-link to="/doc/dialog">Dialog</router-link>
           </li>
           <li>
-            <router-link to="/doc/tabs">Tabs 组件</router-link>
+            <router-link to="/doc/tabs">Tabs</router-link>
           </li>
         </ol>
       </aside>
@@ -28,6 +28,7 @@
 
 <script lang="ts">
 import Topnav from "../components/Topnav.vue";
+
 import { inject, Ref } from "vue";
 export default {
   components: { Topnav },
@@ -48,8 +49,8 @@ export default {
   }
   > .content {
     flex-grow: 1;
-    padding-top: 60px;
-    padding-left: 156px;
+    padding-top: 50px;
+    padding-left: 168px;
     @media (max-width: 500px) {
       padding-left: 0;
     }
@@ -68,7 +69,6 @@ export default {
 }
 aside {
   background: lightblue;
-  width: 150px;
   padding: 16px;
   position: fixed;
   top: 0;
