@@ -3,16 +3,27 @@
 </template>
 
 <script lang="ts">
-import { ref, provide } from "vue";
+import { ref, provide, computed, watchEffect, watch } from "vue";
 import { router } from "./router";
 export default {
   name: "App",
   setup() {
-    const width = document.documentElement.clientWidth;
-    const menuVisible = ref(width <= 500 ? false : true);
+    const width = ref(document.documentElement.clientWidth);
+    const toggleMenuButtonVisible = computed(() =>
+      width.value <= 500 ? true : false
+    );
+    const menuVisible = ref(width.value <= 500 ? false : true);
+    watch(width, (newWidth) => {
+      if (newWidth >= 500) {
+        menuVisible.value = true;
+      }
+    });
     provide("menuVisible", menuVisible); // set
+    window.addEventListener("resize", () => {
+      width.value = document.documentElement.clientWidth;
+    });
     router.afterEach(() => {
-      if (width <= 500) {
+      if (width.value <= 500) {
         menuVisible.value = false;
       }
     });

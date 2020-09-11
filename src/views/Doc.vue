@@ -1,21 +1,33 @@
 <template>
   <div class="layout">
-    <Topnav class="nav" />
+    <Topnav toggleButtonVisible class="nav" />
     <div class="content">
       <aside v-if="menuVisible">
-        <h2>Components</h2>
+        <h2>文档</h2>
         <ol>
           <li>
-            <router-link to="/doc/switch">Switch</router-link>
+            <router-link to="/doc/intro">介绍</router-link>
           </li>
           <li>
-            <router-link to="/doc/button">Button</router-link>
+            <router-link to="/doc/install">安装</router-link>
           </li>
           <li>
-            <router-link to="/doc/dialog">Dialog</router-link>
+            <router-link to="/doc/getStarted">开始使用</router-link>
+          </li>
+        </ol>
+        <h2>组件列表</h2>
+        <ol>
+          <li>
+            <router-link to="/doc/switch">Switch 组件</router-link>
           </li>
           <li>
-            <router-link to="/doc/tabs">Tabs</router-link>
+            <router-link to="/doc/button">Button 组件</router-link>
+          </li>
+          <li>
+            <router-link to="/doc/dialog">Dialog 组件</router-link>
+          </li>
+          <li>
+            <router-link to="/doc/tabs">Tabs 组件</router-link>
           </li>
         </ol>
       </aside>
@@ -28,18 +40,22 @@
 
 <script lang="ts">
 import Topnav from "../components/Topnav.vue";
-
 import { inject, Ref } from "vue";
 export default {
-  components: { Topnav },
+  components: {
+    Topnav,
+  },
   setup() {
     const menuVisible = inject<Ref<boolean>>("menuVisible"); // get
-    return { menuVisible };
+    return {
+      menuVisible,
+    };
   },
 };
 </script>
 
 <style lang="scss" scoped>
+$blue: #1732a4;
 .layout {
   display: flex;
   flex-direction: column;
@@ -49,8 +65,8 @@ export default {
   }
   > .content {
     flex-grow: 1;
-    padding-top: 50px;
-    padding-left: 168px;
+    padding-top: 60px;
+    padding-left: 156px;
     @media (max-width: 500px) {
       padding-left: 0;
     }
@@ -64,11 +80,13 @@ export default {
   > main {
     flex-grow: 1;
     padding: 16px;
-    background: lightgreen;
+    background: white;
   }
 }
 aside {
-  background: lightblue;
+  background: $blue;
+  color: #fff;
+  width: 150px;
   padding: 16px;
   position: fixed;
   top: 0;
