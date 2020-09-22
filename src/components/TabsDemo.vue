@@ -1,25 +1,18 @@
 <template>
-  <div>Examples</div>
-  <h1>Example 1</h1>
-  <Tabs v-model:selected="x">
-    <Tab title="Tab1">Content 1</Tab>
-    <Tab title="Tab2">Content 2</Tab>
-  </Tabs>
+  <h1>Tabs 示例</h1>
+  <Demo :component="Tabs1Demo" />
 </template>
 
 <script lang="ts">
-import Tabs from "../lib/Tabs.vue";
-import Tab from "../lib/Tab.vue";
-import { ref } from "vue";
+import Demo from "./Demo.vue";
+import Tabs1Demo from "./Tabs1.demo.vue";
 export default {
   components: {
-    Tabs,
-    Tab,
+    Demo,
   },
   setup() {
-    const x = ref("Tab1");
     return {
-      x,
+      Tabs1Demo,
     };
   },
 };

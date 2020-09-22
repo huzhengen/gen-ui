@@ -1,16 +1,17 @@
 <template>
   <div class="topnav">
-    <router-link to="/" class="logo-wrapper">
-      <svg class="logo">
+    <router-link to="/" class="logo">
+      <svg class="icon">
         <use xlink:href="#icon-gen" />
       </svg>
+      <span>GEN UI</span>
     </router-link>
     <ul class="menu">
       <li>
-        <router-link to="/doc">DOC</router-link>
+        <router-link to="/doc">Doc</router-link>
       </li>
     </ul>
-    <svg v-if="toggleButtonVisible" class="toggleAside" @click="toggleMenu">
+    <svg v-if="toggleMenuButtonVisible" class="toggleAside" @click="toggleMenu">
       <use xlink:href="#icon-menu" />
     </svg>
   </div>
@@ -20,7 +21,7 @@
 import { inject, Ref } from "vue";
 export default {
   props: {
-    toggleButtonVisible: {
+    toggleMenuButtonVisible: {
       type: Boolean,
       default: false,
     },
@@ -47,19 +48,30 @@ $white: #fff;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 20;
   justify-content: center;
   align-items: center;
   background: $blue;
   box-shadow: 0 0 2px rgba(88, 130, 220, 1);
-  .logo {
+  > .logo {
+    margin-right: auto;
+    fill: $white;
+    color: $white;
+    text-decoration: none;
+    height: 24px;
+    display: flex;
+    align-items: center;
     &-wrapper {
       margin-right: auto;
       height: 24px;
     }
-    width: 24px;
-    height: 24px;
-    fill: $white;
+    > svg {
+      width: 24px;
+      height: 24px;
+    }
+    > span {
+      padding-left: 10px;
+    }
   }
   > .menu {
     display: flex;
@@ -84,7 +96,7 @@ $white: #fff;
     > .menu {
       display: none;
     }
-    .logo-wrapper {
+    > .logo {
       margin: 0 auto;
     }
     > .toggleAside {

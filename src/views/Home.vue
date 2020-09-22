@@ -4,7 +4,7 @@
       <Topnav />
       <div class="banner">
         <h1>GEN-UI</h1>
-        <h2>a Vue UI library</h2>
+        <h2>A Vue UI Library</h2>
         <p class="actions">
           <a href="https://github.com/huzhengen/gen-ui" target="_blank">GITHUB</a>
           <router-link to="/doc">GET STARTED</router-link>
@@ -29,7 +29,7 @@
         </li>
         <li>
           <svg>
-            <use xlink:href="#icon-code" />
+            <use xlink:href="#icon-webcode" />
           </svg>
           <h3>Clear Code</h3>
           <p>Clear Code</p>
@@ -51,6 +51,7 @@ export default {
 <style lang="scss" scoped>
 $border-radius: 5px;
 $blue: #1732a4;
+$color: #007974;
 a {
   text-decoration: none;
 }
@@ -94,24 +95,35 @@ a {
       padding: 8px 18px;
       background: #fff;
       color: $blue;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 }
 .features {
-  margin: 34px auto 0;
-  width: 400px;
-  color: #16005c;
+  margin: 64px auto;
+  padding: 0 16px;
   @media (min-width: 800px) {
     width: 800px;
+    > ul {
+      > li {
+        width: 50%;
+      }
+    }
   }
   @media (min-width: 1200px) {
     width: 1200px;
+    > ul {
+      > li {
+        width: 33.3333%;
+      }
+    }
   }
   > ul {
     display: flex;
     flex-wrap: wrap;
     > li {
-      width: 400px;
       margin: 16px 0;
       display: grid;
       justify-content: start;
