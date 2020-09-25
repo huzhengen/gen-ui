@@ -1,7 +1,7 @@
 # Installation
 
 ```
-npm install gen-ui --save
+npm install gen-ui
 ```
 
 or

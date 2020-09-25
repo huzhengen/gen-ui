@@ -4,28 +4,31 @@ Size
 <template>
   <div>
     <div>
-      <Button size="big">Big</Button>
-      <Button>Default</Button>
-      <Button size="small">Small</Button>
+      <Button size="big">Big Button</Button>
+      <Button>Default Button</Button>
+      <Button size="small">Small Button</Button>
     </div>
     <div>
-      <Button theme="link" size="big">Big</Button>
-      <Button theme="link">Default</Button>
-      <Button size="small" theme="link">Small</Button>
+      <Button theme="link" size="big">Big Link</Button>
+      <Button theme="link">Default Link</Button>
+      <Button size="small" theme="link">Small Link</Button>
     </div>
     <div>
-      <Button size="big" theme="text">Big</Button>
-      <Button theme="text">Default</Button>
-      <Button size="small" theme="text">Small</Button>
+      <Button size="big" theme="text">Big Text</Button>
+      <Button theme="text">Default Text</Button>
+      <Button size="small" theme="text">Small Text</Button>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import Button from "../lib/Button.vue";
+import {
+  Button
+} from "../lib/index";
+
 export default {
   components: {
-    Button,
-  },
-};
+    Button
+  }
+}
 </script>

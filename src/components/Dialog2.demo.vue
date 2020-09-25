@@ -1,5 +1,5 @@
 <demo>
-Dialog
+Open Dialog
 </demo>
 <template>
   <div>
@@ -8,29 +8,34 @@ Dialog
 </template>
 
 <script lang="ts">
-import Button from "../lib/Button.vue";
-import { ref, h } from "vue";
-import { openDialog } from "../lib/openDialog";
+import {
+  Button,
+  openDialog
+} from "../lib/index";
+import {
+  h
+} from 'vue'
+
 export default {
   components: {
-    Button,
+    Button
   },
   setup() {
     const showDialog = () => {
       openDialog({
-        title: h("strong", {}, "Title"),
-        content: "Hello",
+        title: h('strong', {}, 'Title'),
+        content: 'Content',
         ok() {
-          console.log("ok");
+          console.log('ok')
         },
         cancel() {
-          console.log("cancel");
-        },
-      });
-    };
+          console.log('cancel')
+        }
+      })
+    }
     return {
-      showDialog,
-    };
-  },
-};
+      showDialog
+    }
+  }
+}
 </script>

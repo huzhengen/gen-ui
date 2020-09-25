@@ -1,49 +1,53 @@
 <template>
   <div class="demo">
-    <h2>{{component.__sourceCodeTitle}}</h2>
+    <h2>{{ component.__sourceCodeTitle }}</h2>
     <div class="demo-component">
-      <component :is="component" />
+      <component :is="component"/>
     </div>
     <div class="demo-actions">
-      <Button @click="toggleCode">Show Code</Button>
+      <Button @click="hideCode" v-if="codeVisible">Hide Code</Button>
+      <Button @click="showCode" v-else>Show Code</Button>
     </div>
     <div class="demo-code" v-if="codeVisible">
-      <pre class="language-html" v-html="html" />
+      <pre class="language-html" v-html="html"/>
     </div>
+
   </div>
 </template>
 
 <script lang="ts">
-import Button from "../lib/Button.vue";
-import "prismjs";
-import "prismjs/themes/prism.css";
-import { computed, ref } from "vue";
-const Prism = (window as any).Prism;
+import Button from '../lib/Button.vue'
+import 'prismjs';
+import 'prismjs/themes/prism.css'
+import {
+  computed,
+  ref
+} from 'vue';
+
+const Prism = (window as any).Prism
 export default {
   components: {
-    Button,
+    Button
   },
   props: {
-    component: Object,
+    component: Object
   },
   setup(props) {
     const html = computed(() => {
-      return Prism.highlight(
-        props.component.__sourceCode,
-        Prism.languages.html,
-        "html"
-      );
-    });
-    const toggleCode = () => (codeVisible.value = !codeVisible.value);
-    const codeVisible = ref(false);
+      return Prism.highlight(props.component.__sourceCode, Prism.languages.html, 'html')
+    })
+    const showCode = () => codeVisible.value = true
+    const hideCode = () => codeVisible.value = false
+    const codeVisible = ref(false)
     return {
       Prism,
       html,
       codeVisible,
-      toggleCode,
-    };
-  },
-};
+      showCode,
+      hideCode
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -74,7 +78,7 @@ $border-color: #d9d9d9;
 
     > pre {
       line-height: 1.1;
-      font-family: Consolas, "Courier New", Courier, monospace;
+      font-family: Consolas, 'Courier New', Courier, monospace;
       margin: 0;
     }
   }

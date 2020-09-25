@@ -1,27 +1,27 @@
 <template>
   <div>
     <h1>Switch Examples</h1>
-    <Demo :component="Switch1Demo" />
-    <Demo :component="Switch2Demo" />
+    <Demo :component="Switch1Demo"/>
+    <Demo :component="Switch2Demo"/>
   </div>
 </template>
 
 <script lang="ts">
-import Switch1Demo from "./Switch1.demo.vue";
-import Switch2Demo from "./Switch2.demo.vue";
-import Demo from "./Demo.vue";
-import { ref } from "vue";
+import Switch1Demo from './Switch1.demo.vue'
+import Switch2Demo from './Switch2.demo.vue'
+import Demo from './Demo.vue'
+
 export default {
   components: {
-    Demo,
+    Demo
   },
   setup() {
     return {
       Switch1Demo,
       Switch2Demo,
-    };
-  },
-};
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -52,7 +52,7 @@ $border-color: #d9d9d9;
 
     > pre {
       line-height: 1.1;
-      font-family: Consolas, "Courier New", Courier, monospace;
+      font-family: Consolas, 'Courier New', Courier, monospace;
       margin: 0;
     }
   }

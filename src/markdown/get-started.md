@@ -3,7 +3,7 @@
 [Install](#/doc/install)
 
 ```
-import {Button, Tabs, Switch, Dialog} from "gen-ui"
+import {Button, Tabs, Tab, Switch, Dialog, openDialog} from "gen-ui"
 ```
 
 ## Vue SFC
@@ -15,7 +15,7 @@ import {Button, Tabs, Switch, Dialog} from "gen-ui"
   </div>
 </template>
 <script>
-import {Button, Tabs, Switch, Dialog} from "king-ui"
+import {Button, Tabs, Tab, Switch, Dialog, openDialog} from "gen-ui"
 export default {
   components: {Button}
 }

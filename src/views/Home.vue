@@ -57,7 +57,6 @@ a {
 }
 .topnavAndBanner {
   background: $blue;
-  // clip-path: ellipse(80% 60% at 50% 40%);
 }
 .banner {
   padding: 100px 0 70px;
@@ -89,7 +88,6 @@ a {
     padding: 8px 0;
     a {
       margin: 0 10px;
-      background: #201f24;
       display: inline-block;
       border-radius: $border-radius;
       padding: 8px 18px;
