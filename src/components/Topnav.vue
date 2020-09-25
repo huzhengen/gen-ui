@@ -28,10 +28,16 @@ export default {
     },
   },
   setup() {
-    const color = computed(() => {
+    const docColor = computed(() => {
       if (location.hash === '#/') {
         return '#fff';
       } else {
+        return '#1732a4';
+      }
+    })
+    const width = document.documentElement.clientWidth;
+    const topnavColor = computed(() => {
+      if (width <= 500) {
         return '#1732a4';
       }
     })
@@ -41,13 +47,14 @@ export default {
     };
     return {
       toggleMenu,
-      color,
+      docColor,
+      topnavColor
     };
   },
 };
 </script>
 
-<style lang="scss" scoped vars="{ color }">
+<style lang="scss" scoped vars="{ docColor, topnavColor}">
 $blue: #1732a4;
 $white: #fff;
 .topnav {
@@ -60,6 +67,7 @@ $white: #fff;
   z-index: 20;
   justify-content: center;
   align-items: center;
+  background: var(--topnavColor);
 
   > .logo {
     margin-right: auto;
@@ -95,7 +103,7 @@ $white: #fff;
       margin: 0 1em;
 
       > a {
-        color: var(--color);
+        color: var(--docColor);
       }
     }
   }
