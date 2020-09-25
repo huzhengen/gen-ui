@@ -1,17 +1,17 @@
-# GEN-UI
+# GEN-VUE-UI
 
-GEN UI is a simple Vue UI library.
+GEN-VUE-UI is a simple Vue UI library.
 
 ### Install
 
 ```
-npm install gen-ui
+npm install gen-vue-ui
 ```
 
 or
 
 ```
-yarn add gen-ui
+yarn add gen-vue-ui
 ```
 
 ### Use Vue SFC
@@ -23,7 +23,7 @@ yarn add gen-ui
   </div>
 </template>
 <script>
-import {Button, Tabs, Tab, Switch, Dialog, openDialog} from "gen-ui"
+import {Button, Tabs, Tab, Switch, Dialog, openDialog} from "gen-vue-ui"
 export default {
   components: {Button}
 }

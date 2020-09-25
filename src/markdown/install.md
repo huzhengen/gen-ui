@@ -1,13 +1,13 @@
 # Installation
 
 ```
-npm install gen-ui
+npm install gen-vue-ui
 ```
 
 or
 
 ```
-yarn add gen-ui
+yarn add gen-vue-ui
 ```
 
 [Get Started](#/doc/get-started)

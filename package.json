@@ -1,5 +1,5 @@
 {
-  "name": "gen-ui",
+  "name": "gen-vue-ui",
   "version": "0.0.1",
   "files": [
     "dist/lib/*"

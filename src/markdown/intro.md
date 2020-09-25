@@ -1,5 +1,5 @@
 # Introduction
 
-GEN UI is a simple Vue UI library.
+GEN-VUE-UI is a simple Vue UI library.
 
 [Install](#/doc/install)

@@ -4,7 +4,7 @@
       <svg class="icon">
         <use xlink:href="#icon-gen"/>
       </svg>
-      <span>GEN UI</span>
+      <span>GEN-VUE-UI</span>
     </router-link>
     <ul class="menu">
       <li>

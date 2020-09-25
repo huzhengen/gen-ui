@@ -3,7 +3,7 @@
     <div class="topnavAndBanner">
       <Topnav />
       <div class="banner">
-        <h1>GEN-UI</h1>
+        <h1>GEN-VUE-UI</h1>
         <h2>A Simple Vue UI Library</h2>
         <p class="actions">
           <a href="https://github.com/huzhengen/gen-ui" target="_blank">GITHUB</a>
