@@ -1,0 +1,9 @@
+node_modules
+.DS_Store
+dist
+/dist
+*.local
+/.history
+/.idea
+_assets
+yarn.lock
