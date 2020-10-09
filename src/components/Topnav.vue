@@ -59,7 +59,7 @@ $blue: #1732a4;
 $white: #fff;
 .topnav {
   display: flex;
-  padding: 14px 24px;
+  padding: 14px 13px;
   position: fixed;
   top: 0;
   left: 0;
