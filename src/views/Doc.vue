@@ -87,11 +87,10 @@ $aside-index: 10;
 aside {
   background: $blue;
   color: #fff;
-  padding: 16px 0 16px;
   position: fixed;
   top: 0;
   left: 0;
-  padding-top: 70px;
+  padding: 70px 0 16px;
   height: 100%;
   z-index: $aside-index;
   > h2 {
