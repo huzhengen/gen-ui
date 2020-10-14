@@ -29,3 +29,7 @@ export default {
 }
 </script>
 ```
+
+### Thanks
+
+<a href="https://www.jetbrains.com/?from=GEN-VUE-UI"><img src="./jetbrains.png" alt="jetbrains" width="300"></a>
