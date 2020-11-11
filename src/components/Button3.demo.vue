@@ -9,11 +9,6 @@ Level
       <Button level="danger">Danger Button</Button>
     </div>
     <div>
-      <Button theme="link" level="main">Main Link</Button>
-      <Button theme="link">Default Link</Button>
-      <Button theme="link" level="danger">Danger Link</Button>
-    </div>
-    <div>
       <Button theme="text" level="main">Main Text</Button>
       <Button theme="text">Default Text</Button>
       <Button theme="text" level="danger">Danger Text</Button>

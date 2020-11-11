@@ -2,23 +2,26 @@
   <div class="topnav">
     <router-link to="/" class="logo">
       <svg class="icon">
-        <use xlink:href="#icon-gen"/>
+        <use xlink:href="#icon-gen" />
       </svg>
       <span>GEN-VUE-UI</span>
     </router-link>
     <ul class="menu">
       <li>
-        <router-link to="/doc">Doc</router-link>
+        <router-link to="/doc">Docs</router-link>
+      </li>
+      <li>
+        <a href="https://github.com/huzhengen/gen-ui" target="_blank">Github</a>
       </li>
     </ul>
     <svg v-if="toggleMenuButtonVisible" class="toggleAside" @click="toggleMenu">
-      <use xlink:href="#icon-menu"/>
+      <use xlink:href="#icon-menu" />
     </svg>
   </div>
 </template>
 
 <script lang="ts">
-import {inject, Ref, computed} from "vue";
+import { inject, Ref, computed } from "vue";
 
 export default {
   props: {
@@ -29,18 +32,18 @@ export default {
   },
   setup() {
     const docColor = computed(() => {
-      if (location.hash === '#/') {
-        return '#fff';
+      if (location.hash === "#/") {
+        return "#fff";
       } else {
-        return '#1732a4';
+        return "#1732a4";
       }
-    })
+    });
     const width = document.documentElement.clientWidth;
     const topnavColor = computed(() => {
       if (width <= 500) {
-        return '#1732a4';
+        return "#1732a4";
       }
-    })
+    });
     const menuVisible = inject<Ref<boolean>>("menuVisible"); // get
     const toggleMenu = () => {
       menuVisible.value = !menuVisible.value;
@@ -48,7 +51,7 @@ export default {
     return {
       toggleMenu,
       docColor,
-      topnavColor
+      topnavColor,
     };
   },
 };

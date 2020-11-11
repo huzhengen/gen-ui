@@ -3,7 +3,6 @@ Disabled
 </demo>
 <template>
   <Button disabled>Disabled Button</Button>
-  <Button theme="link" disabled>Disabled Link</Button>
   <Button theme="text" disabled>Disabled Text</Button>
 </template>
 
