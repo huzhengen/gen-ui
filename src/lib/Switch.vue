@@ -1,5 +1,5 @@
 <template>
-  <button class="gen-switch" @click="toggle" :class="{'gen-checked':value}">
+  <button class="gen-switch" @click="toggle" :class="{ 'gen-checked': value }">
     <span></span>
   </button>
 </template>
@@ -27,6 +27,7 @@ $h2: $h - 4px;
   background: #bfbfbf;
   border-radius: $h/2;
   position: relative;
+  cursor: pointer;
   > span {
     position: absolute;
     top: 2px;
