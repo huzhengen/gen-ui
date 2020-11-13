@@ -4,6 +4,7 @@ import Doc from "./views/Doc.vue";
 import SwitchDemo from "./components/SwitchDemo.vue";
 import ButtonDemo from "./components/ButtonDemo.vue";
 import LinkDemo from "./components/LinkDemo.vue";
+import TextDemo from "./components/TextDemo.vue";
 import DialogDemo from "./components/DialogDemo.vue";
 import TabsDemo from "./components/TabsDemo.vue";
 
@@ -29,6 +30,7 @@ export const router = createRouter({
         { path: "switch", component: SwitchDemo },
         { path: "button", component: ButtonDemo },
         { path: "link", component: LinkDemo },
+        { path: "text", component: TextDemo },
         { path: "dialog", component: DialogDemo },
         { path: "tabs", component: TabsDemo },
       ],

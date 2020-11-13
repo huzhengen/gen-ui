@@ -1,12 +1,12 @@
 <demo>
-Level
+Size
 </demo>
 <template>
   <div>
     <div>
-      <Button level="main">Main Button</Button>
-      <Button>Default Button</Button>
-      <Button level="danger">Danger Button</Button>
+      <Button size="big" theme="text">Big Text</Button>
+      <Button theme="text">Default Text</Button>
+      <Button size="small" theme="text">Small Text</Button>
     </div>
   </div>
 </template>

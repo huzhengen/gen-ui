@@ -1,10 +1,8 @@
 <demo>
-Default
+Disabled
 </demo>
 <template>
-  <div>
-    <Button>Button</Button>
-  </div>
+  <Button theme="text" disabled>Disabled Text</Button>
 </template>
 
 <script lang="ts">

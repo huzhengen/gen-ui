@@ -27,6 +27,9 @@
             <router-link to="/doc/link">Link</router-link>
           </li>
           <li>
+            <router-link to="/doc/text">Text</router-link>
+          </li>
+          <li>
             <router-link to="/doc/dialog">Dialog</router-link>
           </li>
           <li>
