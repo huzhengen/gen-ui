@@ -5,7 +5,6 @@ Size
   <div>
     <div>
       <Button size="big">Big Button</Button>
-      <Button>Default Button</Button>
       <Button size="small">Small Button</Button>
     </div>
   </div>

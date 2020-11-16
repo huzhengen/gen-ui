@@ -4,7 +4,6 @@ Loading
 <template>
   <div>
     <Button loading>Loading</Button>
-    <Button>Loaded</Button>
   </div>
 </template>
 

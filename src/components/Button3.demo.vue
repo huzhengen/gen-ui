@@ -5,7 +5,6 @@ Level
   <div>
     <div>
       <Button level="main">Main Button</Button>
-      <Button>Default Button</Button>
       <Button level="danger">Danger Button</Button>
     </div>
   </div>
