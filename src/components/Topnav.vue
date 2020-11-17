@@ -35,7 +35,7 @@ export default {
       if (location.hash === "#/") {
         return "#fff";
       } else {
-        return "#1732a4";
+        return "#1d2c40";
       }
     });
     const width = document.documentElement.clientWidth;
@@ -104,9 +104,11 @@ $white: #fff;
 
     > li {
       margin: 0 1em;
-
       > a {
         color: var(--docColor);
+        &:hover {
+          text-decoration: none;
+        }
       }
     }
   }
