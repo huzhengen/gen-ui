@@ -47,6 +47,7 @@ $h: 32px;
 $border-color: #d9d9d9;
 $color: #333;
 $blue: #40a9ff;
+$green: #28a745;
 $radius: 4px;
 $red: red;
 $grey: grey;
@@ -116,6 +117,16 @@ $grey: grey;
       &:focus {
         background: darken($blue, 10%);
         border-color: darken($blue, 10%);
+      }
+    }
+    &.gen-level-success {
+      background: $green;
+      color: white;
+      border-color: $green;
+      &:hover,
+      &:focus {
+        background: darken($green, 10%);
+        border-color: darken($green, 10%);
       }
     }
     &.gen-level-danger {

@@ -2,7 +2,7 @@
 Disabled
 </demo>
 <template>
-  <Button disabled>Disabled Button</Button>
+  <Button disabled>Disabled</Button>
 </template>
 
 <script lang="ts">

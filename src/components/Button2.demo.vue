@@ -4,8 +4,8 @@ Size
 <template>
   <div>
     <div>
-      <Button size="big">Big Button</Button>
-      <Button size="small">Small Button</Button>
+      <Button size="big">Big</Button>
+      <Button size="small">Small</Button>
     </div>
   </div>
 </template>

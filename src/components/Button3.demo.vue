@@ -4,8 +4,9 @@ Level
 <template>
   <div>
     <div>
-      <Button level="main">Main Button</Button>
-      <Button level="danger">Danger Button</Button>
+      <Button level="main">Main</Button>
+      <Button level="success">Success</Button>
+      <Button level="danger">Danger</Button>
     </div>
   </div>
 </template>
