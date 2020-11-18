@@ -51,6 +51,7 @@ $green: #28a745;
 $radius: 4px;
 $red: red;
 $grey: grey;
+$secondary: #6c757d;
 .gen-button {
   box-sizing: border-box;
   height: $h;
@@ -127,6 +128,16 @@ $grey: grey;
       &:focus {
         background: darken($green, 10%);
         border-color: darken($green, 10%);
+      }
+    }
+    &.gen-level-secondary {
+      background: $secondary;
+      color: white;
+      border-color: $secondary;
+      &:hover,
+      &:focus {
+        background: darken($secondary, 10%);
+        border-color: darken($secondary, 10%);
       }
     }
     &.gen-level-danger {
