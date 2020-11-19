@@ -8,6 +8,7 @@ Level
       <Button level="secondary">Secondary</Button>
       <Button level="success">Success</Button>
       <Button level="danger">Danger</Button>
+      <Button level="warning">Warning</Button>
     </div>
   </div>
 </template>
