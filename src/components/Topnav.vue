@@ -57,7 +57,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped vars="{ docColor, topnavColor}">
+<style lang="scss" scoped>
 $blue: #1732a4;
 $white: #fff;
 .topnav {
@@ -70,7 +70,7 @@ $white: #fff;
   z-index: 20;
   justify-content: center;
   align-items: center;
-  background: var(--topnavColor);
+  background: v-bind(topnavColor);
 
   > .logo {
     margin-right: auto;
@@ -105,7 +105,7 @@ $white: #fff;
     > li {
       margin: 0 1em;
       > a {
-        color: var(--docColor);
+        color: v-bind(docColor);
         &:hover {
           text-decoration: none;
         }
