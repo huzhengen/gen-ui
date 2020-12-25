@@ -1,8 +1,6 @@
-name: gh-pages publisher 🚀
+name: gh-pages publisher
 
-on:
-push:
-  branches: [ master ]
+on: [push, pull_request]]
 
 jobs:
 publish-gh-pages:
@@ -10,8 +8,6 @@ publish-gh-pages:
   steps:
      - uses: actions/checkout@v2
      - uses: actions/setup-node@v1
-     with:
-        node-version: 12
      - run: npm ci
      - run: git config user.name "huzhengen" && git config user.email "huzhengen@gmail.com"
      - run: npm run deploy
