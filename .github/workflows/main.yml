@@ -11,5 +11,8 @@ jobs:
        - run: git config user.name "huzhengen" && git config user.email "huzhengen@gmail.com"
        - run: npm install
        - run: npm run deploy
-         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+         with:
+            ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+            BRANCH: gh-pages
+            FOLDER: dist
+            CLEAN: true
