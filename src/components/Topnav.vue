@@ -31,27 +31,12 @@ export default {
     },
   },
   setup() {
-    const docColor = computed(() => {
-      if (location.hash === "#/") {
-        return "#fff";
-      } else {
-        return "#1d2c40";
-      }
-    });
-    const width = document.documentElement.clientWidth;
-    const topnavColor = computed(() => {
-      if (width <= 500) {
-        return "#1732a4";
-      }
-    });
     const menuVisible = inject<Ref<boolean>>("menuVisible"); // get
     const toggleMenu = () => {
       menuVisible.value = !menuVisible.value;
     };
     return {
       toggleMenu,
-      docColor,
-      topnavColor,
     };
   },
 };
@@ -70,7 +55,6 @@ $white: #fff;
   z-index: 20;
   justify-content: center;
   align-items: center;
-  background: v-bind(topnavColor);
 
   > .logo {
     margin-right: auto;
@@ -105,7 +89,7 @@ $white: #fff;
     > li {
       margin: 0 1em;
       > a {
-        color: v-bind(docColor);
+        color: $blue;
         &:hover {
           text-decoration: none;
         }

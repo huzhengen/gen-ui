@@ -53,6 +53,7 @@ $red: red;
 $grey: grey;
 $secondary: #6c757d;
 $warning: #ffc107;
+$info: #0dcaf0;
 .gen-button {
   box-sizing: border-box;
   height: $h;
@@ -121,6 +122,16 @@ $warning: #ffc107;
         border-color: darken($blue, 10%);
       }
     }
+    &.gen-level-secondary {
+      background: $secondary;
+      color: white;
+      border-color: $secondary;
+      &:hover,
+      &:focus {
+        background: darken($secondary, 10%);
+        border-color: darken($secondary, 10%);
+      }
+    }
     &.gen-level-success {
       background: $green;
       color: white;
@@ -131,14 +142,14 @@ $warning: #ffc107;
         border-color: darken($green, 10%);
       }
     }
-    &.gen-level-secondary {
-      background: $secondary;
+    &.gen-level-danger {
+      background: $red;
+      border-color: $red;
       color: white;
-      border-color: $secondary;
       &:hover,
       &:focus {
-        background: darken($secondary, 10%);
-        border-color: darken($secondary, 10%);
+        background: darken($red, 10%);
+        border-color: darken($red, 10%);
       }
     }
     &.gen-level-warning {
@@ -151,14 +162,14 @@ $warning: #ffc107;
         border-color: darken($warning, 10%);
       }
     }
-    &.gen-level-danger {
-      background: $red;
-      border-color: $red;
-      color: white;
+    &.gen-level-info {
+      background: $info;
+      color: $color;
+      border-color: $info;
       &:hover,
       &:focus {
-        background: darken($red, 10%);
-        border-color: darken($red, 10%);
+        background: darken($info, 10%);
+        border-color: darken($info, 10%);
       }
     }
   }
