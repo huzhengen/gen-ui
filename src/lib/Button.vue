@@ -54,6 +54,7 @@ $grey: grey;
 $secondary: #6c757d;
 $warning: #ffc107;
 $info: #0dcaf0;
+$light: #f8f9fa;
 .gen-button {
   box-sizing: border-box;
   height: $h;
@@ -170,6 +171,16 @@ $info: #0dcaf0;
       &:focus {
         background: darken($info, 10%);
         border-color: darken($info, 10%);
+      }
+    }
+    &.gen-level-light {
+      background: $light;
+      color: $color;
+      border-color: $light;
+      &:hover,
+      &:focus {
+        background: darken($light, 10%);
+        border-color: darken($light, 10%);
       }
     }
   }

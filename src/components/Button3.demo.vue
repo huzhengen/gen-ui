@@ -10,6 +10,7 @@ Level
       <Button level="danger">Danger</Button>
       <Button level="warning">Warning</Button>
       <Button level="info">Info</Button>
+      <Button level="light">Light</Button>
     </div>
   </div>
 </template>
