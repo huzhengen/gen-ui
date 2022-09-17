@@ -12,6 +12,10 @@ export default {
       type: String,
       default: "button",
     },
+    type: {
+      type: String,
+      default: "default",
+    },
     size: {
       type: String,
       default: "normal",
@@ -30,12 +34,13 @@ export default {
     },
   },
   setup(props) {
-    const { theme, size, level } = props;
+    const { theme, size, level, type } = props;
     const classes = computed(() => {
       return {
         [`gen-theme-${theme}`]: theme,
         [`gen-size-${size}`]: size,
         [`gen-level-${level}`]: level,
+        [`gen-type-${type}`]: type,
       };
     });
     return { classes };
@@ -111,6 +116,9 @@ $light: #f8f9fa;
     font-size: 12px;
     height: 20px;
     padding: 0 4px;
+  }
+  &.gen-type-dashed {
+    border-style: dashed;
   }
   &.gen-theme-button {
     &.gen-level-main {
