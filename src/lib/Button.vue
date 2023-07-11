@@ -112,6 +112,11 @@ $light: #f8f9fa;
     height: 48px;
     padding: 0 16px;
   }
+  &.gen-size-medium {
+    font-size: 18px;
+    height: 34px;
+    padding: 0 10px;
+  }
   &.gen-size-small {
     font-size: 12px;
     height: 20px;
